@@ -10,10 +10,30 @@ class LandingPage extends Component
 
     public function subscribe(){
 
-       logger(00001);
+       logger($this->email);
     }
+   
     public function render()
     {
         return view('livewire.landing-page');
     }
-}
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
