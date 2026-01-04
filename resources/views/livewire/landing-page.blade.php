@@ -65,7 +65,10 @@
                     ></x-text-input>
 
                     <span class="text-gray-100 text-xs">
-                        Ti spediremo un email di conferma.
+                        {{ 
+                        $errors->has('email')
+                        ? $errors->first('email') : 'Ti spediremo un email di conferma.'
+                        }}
                     </span>
 
                     <x-primary-button
