@@ -1,7 +1,7 @@
 <div class="flex flex-col bg-green-800 w-full h-screen"
     x-data="{
-    showSubscribe: false,
-    showSuccess: false,
+    showSubscribe: @entangle('showSubscribe'),
+    showSuccess: @entangle('showSuccess'),
     }" >
 
         <nav class="flex pt-5 justify-between container mx-auto text-green-200">
