@@ -95,12 +95,20 @@
                     Ottimo!
                 </p>
 
-                <p class="text-white text-3xl
-                text-center">
+                @if (request()->has('verified') && request()->verified == 1 )
+                    
+                    <p class="text-white text-3xl text-center">
+                      Grazie per la conferma.
+                    </p>
 
-                    Controlla la tua email.
+                @else
+                    
+                    <p class="text-white text-3xl text-center">
+                        Controlla la tua email.
+                    </p>
+                    
+                @endif
 
-                </p>
         </x-modal>
 
 
